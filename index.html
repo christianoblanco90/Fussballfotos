@@ -15,12 +15,29 @@
         .container {
             max-width: 1100px;
             margin: 0 auto;
+            position: relative;
         }
-        h1 {
-            text-align: center;
-            color: #1a252f;
+
+        /* Header mit Logo oben rechts */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e2e8f0;
         }
+        .header h1 {
+            margin: 0;
+            color: #1a252f;
+            font-size: 2rem;
+        }
+        .logo {
+            max-height: 80px;
+            width: auto;
+            object-fit: contain;
+        }
+
         .section-title {
             color: #2c3e50;
             font-size: 1.5rem;
@@ -83,52 +100,68 @@
             font-size: 0.9rem;
             color: #666;
         }
+
+        /* Anpassung für kleine Bildschirme */
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column-reverse;
+                gap: 15px;
+                text-align: center;
+            }
+            .logo {
+                max-height: 60px;
+            }
+        }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Galerie Jugendfußball</h1>
+    <!-- Header-Bereich mit Überschrift und Logo -->
+    <header class="header">
+        <h1>Galerie Jugendfußball SC Kirchwald</h1>
+        <img src="https://raw.githubusercontent.com/christianoblanco90/Fussballfotos/refs/heads/main/SCK-LOGO.png" alt="SCK Logo" class="logo">
+    </header>
 
     <!-- Bereich F-Jugend -->
     <h2 class="section-title">F-Jugend</h2>
     <div class="cards-grid">
         
         <a href="f-jugend/spieltag-1.html" class="card">
-            <img src="fussball26.jpg" alt="1. Spieltag" class="card-image">
+            <img src="https://raw.githubusercontent.com/christianoblanco90/Fussballfotos/refs/heads/main/fjugend11_CW_9502.jpg" alt="1. Spieltag F-Jugend" class="card-image">
             <div class="card-content">
-                <div class="card-title">1. Spieltag</div>
-                <div class="card-subtitle">Heimspiel vs. Gegner A</div>
+                <div class="card-title">Turnier in Kruft</div>
+                <div class="card-subtitle">05.09.26</div>
             </div>
         </a>
 
         <a href="f-jugend/spieltag-2.html" class="card">
-            <img src="fussball26.jpg" alt="2. Spieltag" class="card-image">
+            <img src="https://www.sckirchwald.de/s/img/emotionheader.JPG?1781508600.960px.630px" alt="2. Spieltag F-Jugend" class="card-image">
             <div class="card-content">
-                <div class="card-title">2. Spieltag</div>
-                <div class="card-subtitle">Auswärts vs. Gegner B</div>
+                <div class="card-title">Turnier in Kirchwald</div>
+                <div class="card-subtitle">12.09.2026</div>
             </div>
         </a>
 
     </div>
 
     <!-- Bereich Bambini -->
-    <h2 class="section-title">Bambini</h2>
+    <h2 class="section-title">Bambinis</h2>
     <div class="cards-grid">
         
         <a href="bambini/spieltag-1.html" class="card">
-            <img src="fussball26.jpg" alt="1. Spielfest" class="card-image">
+            <img src="https://raw.githubusercontent.com/christianoblanco90/Fussballfotos/refs/heads/main/bambini1_CW_5257.jpg" alt="1. Spielfest Bambini" class="card-image">
             <div class="card-content">
-                <div class="card-title">1. Spielfest</div>
-                <div class="card-subtitle">Spielfest in Musterstadt</div>
+                <div class="card-title">Turnier in Kirchwald</div>
+                <div class="card-subtitle">25.04.26</div>
             </div>
         </a>
 
         <a href="bambini/spieltag-2.html" class="card">
-            <img src="fussball26.jpg" alt="2. Spielfest" class="card-image">
+            <img src="https://www.sckirchwald.de/s/img/emotionheader.JPG?1781508600.960px.630px" alt="2. Spielfest" class="card-image">
             <div class="card-content">
-                <div class="card-title">2. Spielfest</div>
-                <div class="card-subtitle">Heimturnier</div>
+                <div class="card-title">dummy</div>
+                <div class="card-subtitle">date</div>
             </div>
         </a>
 
