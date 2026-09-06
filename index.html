@@ -101,6 +101,41 @@
             color: #666;
         }
 
+        /* Kompakter & responsive Footer */
+footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px 12px;
+    margin: 6px 0;
+}
+
+footer a {
+    color: #27ae60;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-heart {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
         /* Anpassung für kleine Bildschirme */
         @media (max-width: 600px) {
             .header {
@@ -166,6 +201,19 @@
         </a>
 
     </div>
+
+    <!-- Kontaktdaten Footer -->
+    <footer>
+    <div>© 2026 Christian Weiß • Alle Rechte vorbehalten.</div>
+    <div class="footer-info">
+        <span>🏠 Hinter Pöschen 26, 56729 Kirchwald</span>
+        <span>•</span>
+        <span>📧 <a href="mailto:cw1090@googlemail.com">cw1090@googlemail.com</a></span>
+        <span>•</span>
+        <span>📱 <a href="tel:+491624239205">0162/4239205</a></span>
+    </div>
+    <div class="footer-heart">Mit ❤️ erstellt für den SC Kirchwald.</div>
+</footer>
 </div>
 
 </body>
